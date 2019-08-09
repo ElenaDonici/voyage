@@ -1,0 +1,207 @@
+<!--
+Fichier :     contact.html
+Auteur :      Elena Paireli
+Date :        24 novembre 2018
+Description : Page de contact
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Page d'accueil de l'agence de voyage">
+    <meta name="keywords" content="voyage, contact, destination">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elena Paireli">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <title>Contact</title>
+
+
+</head>
+
+<body id="haut">
+
+    <!-- ENTETE -->
+    <div id="contenant">
+        <header id="contenant1">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo3.png" alt="Logo" width="200" height="45"></a>
+                <input type="text" name="search" placeholder="Recherche...">
+            </div>
+
+            <!-- navigation -->
+
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" title="accueil" class="active">Accueil</a></li>
+                        <li><a href="conseils.html" title=" conseils">Conseils</a></li>
+                        <li><a href="destinations.html" title=" destinations">Destinations</a></li>
+                        <li><a href="contact.html" class="clic" title=" contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- fin navigation -->
+            <div id="trouvez">
+                <h1>Inscrivez-vous pour un voyage !</h1>
+
+            </div>
+        </header>
+
+
+
+
+        <!--Formulaires-->
+
+        <article id="form">
+            <div>
+                <h2>Contactez-nous </h2>
+                <div class="formulaire1">
+                    <form>
+                        <label for="nom">Nom et prénom </label>
+                        <input type="text" name="nom" placeholder="Jean Dupont.." pattern="[A-Z][a-z]* [A-Z][a-z]*" required>
+
+                        <label for="cp">Code postal</label>
+                        <input type="text" name="cp" placeholder="h1h 1h1 ou H1H 1H1" pattern="([A-Z][0-9][A-Z] [0-9][A-Z][0-9])|([a-z][0-9][a-z] [0-9][a-z][0-9])" required>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+                        <input type="submit" value="ENVOYER">
+                    </form>
+                </div>
+            </div>
+
+
+            <div>
+                <h2>Inscrivez-vous</h2>
+                <div class="formulaire2">
+                    <form>
+                        <label for="nom">Nom et prénom </label>
+                        <input type="text" id="nom" name="nom" placeholder="Jean Dupont.." pattern="[A-Z][a-z]* [A-Z][a-z]*" required>
+
+                        <label for="adresse">Adresse</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="numero, rue.." pattern="[1-9][0-9]*\, [A-Z][a-z]*" required>
+
+                        <label for="ville">Ville</label>
+                        <input type="text" id="ville" name="ville" placeholder="" pattern="[A-Z][a-z]*" required>
+
+                        <label for="province">Province</label>
+                        <input type="text" id="province" name="province" placeholder="" pattern="[A-Z][a-z]*" required>
+
+                        <label for="cp">Code postal</label>
+                        <input type="text" id="cp" name="cp" placeholder="h1h 1h1 ou H1H 1H1" pattern="([A-Z][0-9][A-Z] [0-9][A-Z][0-9])|([a-z][0-9][a-z] [0-9][a-z][0-9])" required>
+
+                        <label for="courriel">Courriel</label>
+                        <input type="text" id="courriel" name="courriel" placeholder="" pattern="+@.+\..+" required>
+
+                        <label for="telephone">Téléphone</label>
+                        <input type="text" id="telephone" name="telephone" placeholder="(+xxx)514-123-456.." pattern="\(\+\d{3}\)\d{3}[-]\d{3} \d{4}" required>
+
+                        <label for="destination">Destination</label>
+                        <select id="destination" name="destination">
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="turquie">Turquie</option>
+                        <option value="croatie">Croatie</option>
+                        <option value="italie">Italie</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="maroc">Maroc</option>
+                        <option value="asie">Asie</option>
+                       </select>
+                        <input type="submit" value="ENVOYER">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h2>Contacts:</h2>
+                <p>Voyage idéal</p>
+                <p>1234 rue.PIE IX,</p>
+                <p>Montréal,</p>
+                <p>QC H2Z 1X4</p>
+                <p>tel:(514) 546-987-0034</p>
+            </div>
+
+
+        </article>
+
+        <!-- Nouvelles destinations -->
+
+        <aside id ="nouv"> 
+            <h3>Nouvelles destinations</h3>
+            <div id="nouvelles">
+               <div id="oceanie">
+                    <h3>Océanie</h3>
+                    <img src="images/oceanie.jpg" alt="oceanie">
+                    <p> Phasellus eu nunc lacinia, aliquam lorem pellentesque, auctor libero. Vivamus vel laoreet velit. Duis id.
+                    </p>
+                    <a href="#" target="_blank">Voir plus</a>
+                </div>
+
+                <div id="afrique">
+                    <h3>Afrique</h3>
+                    <img src="images/afrique2.jpg" alt="afrique">
+                    <p> Nullam id convallis magna. Sed quis nulla ut quam bibendum aliquet. Duis id tellus purus nunc eget. Duis id.
+                    </p>
+                    <a href="#" target="_blank">Voir plus</a>
+                </div>
+
+                <div id="caraibes">
+                    <h3>Caraibes</h3>
+                    <img src="images/caraibes3.jpg" alt="caraibes">
+                    <p>Vivamus vel laoreet velit. Phasellus facilisis hendrerit est id venenatis. Nullam id convallis magna. Duis id.
+                    </p>
+                    <a href="#" target="_blank">Voir plus</a>
+
+                </div>
+            </div>
+        </aside>
+        <div class="retour">
+            <p><a href="#haut" title="Retour en haut de page" target="_self">Retour en haut de page</a></p>
+        </div>
+
+
+
+        <!-- Pied de page -->
+
+        <footer id="footer">
+            <div class="reseau">
+                <a href="#"><img src="images/Facebook-logo.png" width="50" height="50" alt="facebook"></a>
+                <a href="#"><img src="images/twiter2.png" width="50" height="50" alt="logo"></a>
+                <a href="#"><img class="youtube" src="images/youtube5.png" width="50" height="50" alt="logo"></a>
+            </div>
+
+            <div class="credits">
+                <h3>Crédits </h3>
+                <h4>Entête</h4>
+                <p><a href="https://www.transports-lheureux-lemonnier.com/agence-voyage-seine-maritime.html" target="_blank">www.transports-lheureux-lemonnier.com</a>
+                </p>
+
+                <h4>Nouvelles</h4>
+                <p><a href="https://www.dztraveler.com/oceania/australia/kalbarri-national-park-western-australia" target="_blank">www.dztraveler.com</a>
+                </p>
+                <p><a href="https://www.lexpress.fr/tendances/voyage/voyager-en-afrique-du-sud_1631441.html" target="_blank">www.lexpress.fr</a>
+                </p>
+                <p><a href="https://fr.myvisaluxuryhotels.com/hotel-detail/le-meridien-bora-bora" target="_blank">fr.myvisaluxuryhotels.com</a>
+                </p>
+                <h4>Pied de la page</h4>
+                <p><a href="http://rollplay-court-of-swords.wikia.com/wiki/File:Twitter.png" target="_blank">rollplay-court-of-swords.wikia.com</a>
+                </p>
+                <p><a href="https://www.millenniumfellows.org/middle-east-region-5/2018/8/14/mashael-alkhelaiwi" target="_blank">www.millenniumfellows.org</a>
+                </p>
+                <h4>Text</h4>
+                <p><a href="https://www.lipsum.com/" target="_blank">www.lipsum.com</a>
+                </p>
+            </div>
+
+            <div class="droits">
+                <p>&copy; 2018 Tous droits réservés.</p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

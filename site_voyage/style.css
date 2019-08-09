@@ -1,0 +1,727 @@
+/* Style général et PAGE D'ACCEUIL */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial;
+
+    padding: 0;
+}
+
+h2, #nouv>h3 {
+    font-family: cursive;
+    color: #055A8A;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+p {
+    line-height: 1.5
+}
+
+#contenant {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+
+/*zone de recherche*/
+
+#contenant1 div:first-of-type{
+    padding: 50px;
+    background: #000039;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header input[name="search"] {
+    width: 15%;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+
+
+}
+
+
+/* barre de navigation*/
+
+nav {
+    background-color: #055A8A;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+ul li {
+
+    width: 20%;
+    border: 1px solid #FF8020;
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+    color: whitesmoke;
+}
+
+li a:hover {
+    background-color: #FF8020;
+    color: whitesmoke;
+
+}
+
+nav a.clic {
+    background-color: #FF8020;
+
+
+}
+
+
+/*Slogan*/
+
+h1 {
+    font-family: 'Permanent+Marker', cursive;
+    height: 700px;
+    color: #000039;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 30px;
+    padding-top: 100px;
+    margin-top: 0px;
+
+}
+
+header>div:last-child{
+    background-image: url(images/agence-voyage.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*mission, phylosophie,équipe */
+
+#notre {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+#notre>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    align-items: center;
+
+}
+
+#notre>div:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 70px;
+    align-items: center;
+}
+
+#notre>div:last-child{
+    margin-top: 90px;
+    align-items: center;
+}
+
+
+#notre p {
+    padding-top: 10px;
+    text-indent: 30px;
+}
+
+#notre p::first-letter {
+    color: #FF8020;
+    font-size: 1.5em;
+    line-height: 0.5em;
+}
+
+#notre p::first-line {
+    color: #FF8020;
+}
+
+#notre p,
+h2 {
+
+    margin: 2%;
+    margin-top: 20px;
+
+}
+
+.mission img {
+    width: 50%
+}
+
+.philosophie img {
+    width: 50%;
+}
+
+.equipe img {
+    width: 100%;
+}
+
+
+/*Nouvelles*/
+
+#nouvelles {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#nouv h3 {
+    margin-top: 20px;
+}
+
+#nouvelles h3 {
+    color: #055A8A;
+    text-align: center;
+    font-size: 23px;
+    background-color: #55DDD8;
+    padding: 7px;
+}
+
+#nouvelles p {
+    width: 100%;
+    font-size: 15px;
+
+}
+
+#nouvelles > div {
+    width: 30%;
+    border: 1px solid #055A8A;
+    padding: 0% 2% 2% 2%;
+    border-radius: 8px;
+    margin: 2%
+}
+
+
+#nouvelles a {
+    height: 30px;
+    background-color: #FF8020;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 14px;
+}
+
+#nouvelles img {
+    width: 100%
+}
+
+
+/*pied de page*/
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #55DDD8;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+footer h3 {
+    text-align: center;
+}
+
+.reseau img {
+    border-radius: 10px;
+    background-color: #055A8A;
+
+}
+
+.retour {
+    margin-left: 30px
+}
+
+footer>div:nth-child(2) p {
+    line-height: 10px
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 0px
+}
+
+/* FIN PAGE D'ACCEUIL*/
+
+/*ANIMATIONS*/
+
+/*animation sur le logo*/
+
+#logo a {
+    animation: defilement 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes defilement {
+    50% {
+        transform: translate(200px, 0);
+    }
+
+}
+
+/*animation 3D sur les images de destiamtions*/
+
+.rot {
+    transform: rotateY(180deg);
+    animation: rot 2s infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes rot {
+    0% {
+        transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(50deg);
+    }
+    100% {
+        transform: rotateY(0);
+    }
+}
+
+#destinations img:hover {
+    animation: rot 2s;
+}
+
+
+
+
+/*PAGE CONSEILLES*/
+
+
+
+#conseilles {
+    width: 100%;
+    margin: auto;
+}
+
+#conseilles > div:first-child {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 2%;
+
+}
+
+#conseilles > div:last-of-type {
+    display: flex;
+    align-items: stretch;
+    margin-top: 50px;
+    margin-left: 2%
+}
+
+
+
+#conseilles p {
+    width: 85%;
+
+}
+
+#conseilles > div:first-of-type p {
+    width: 70%;
+
+}
+#conseilles img{margin-right: 50px;}
+
+/*PAGE DESTINATIONS*/
+
+#destinations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#destinations div {
+    width: 80%;
+
+
+}
+
+#destinations > div:first-child {
+    margin-left: 7%
+}
+
+#destinations > div:last-child {
+    margin-right: 2%
+}
+
+#destinations img {
+    width: 100%
+}
+
+
+#destinations h3 {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+    width: 100%;
+    margin-left: 0px;
+    background-color: #FF8020;
+    text-align: center;
+    color: #055A8A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*PAGE CONTACTS*/
+
+#form h2
+ {
+    color: #FF8020;
+    
+}
+#form>div:last-child h2{margin-right: 600px}
+
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #FF8020;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulaire1,
+.formulaire2 {
+    border-radius: 5px;
+    background-color: #055A8A;
+    padding: 20px;
+}
+
+
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.formulaire2 {
+    width: 100%;
+}
+
+.formulaire1 {
+    width: 100%;
+}
+
+
+
+
+#form > div {
+    width: 37%;
+    margin: 2%
+}
+
+#form > div:last-child {
+    width: 15%;
+    border-bottom: 1px solid #055A8A;
+    height: 270px;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/* ADAPTATION TABLETTES, taille maximale de 960px*/
+
+@media screen and (max-width: 960px) {
+    #contenant {
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+    /*navigation*/
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 20%
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border: 1px solid #FF8020;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    #trouvez {
+
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /*mission, philosophie, equipe*/
+     #notre>div:nth-child(-n+3) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+
+    }
+    .mission img {
+        width: 70%;
+
+    }
+    .philosophie img {
+        width: 80%
+    }
+    .mission p,
+    .philosophie p {
+
+        margin: auto;
+    }
+    .equipe img {
+        width: 100%
+    }
+
+
+    /*nouvelles*/
+    #nouvelles {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+    #nouvelles img {
+        width: 100%
+    }
+
+    /*footer*/
+    #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*PAGE CONSEILLES*/
+    #conseilles {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #conseilles > div:first-child {
+        width: 100%;
+        flex-direction: column;
+        margin: auto
+    }
+
+    #conseilles > div:last-of-type {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+    #conseilles > div:first-of-type p {
+        width: 95%;
+        margin: auto;
+
+    }
+    #conseilles p {
+        width: 100%;
+        margin: auto;
+    }
+    #conseilles img {
+        margin: auto;
+       
+    }
+
+
+    /*PAGE DESTINATIONS*/
+    #destinations {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #destinations > div:first-child {
+        margin-left: 19%
+    }
+
+    #destinations > div:last-child {
+        margin-right: 0%
+    }
+
+
+    #destinations > div {
+        margin-left: 19%;
+    }
+
+    /*PAGE CONTACTS*/
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+
+        flex-direction: column;
+        margin: 0 auto;
+        margin-left: 18px;
+
+    }
+
+    #form > div {
+        width: 100%;
+    }
+    #form > div:last-child {
+        width: 100%;
+
+        height: auto;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+
+
+
+}
+
+
+
+/* ADAPTATION SMARTPHONES, taille maximale de 480px*/
+
+@media screen and (max-width: 480px) {
+
+    #contenant1 div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        padding-left: 50px;
+    }
+    #logo img {
+        width: 50%;
+        height: auto;
+    }
+    #contenant1 div:first-of-type a {
+        animation: none;
+    }
+
+    header input[name="search"] {
+        width: 80%;
+
+    }
+
+    ul li a {
+        font-size: 13px;
+    }
+
+
+    /* mission, philisophie, equipe*/
+    .mission img {
+        width: 100%;
+    }
+    .philosophie img {
+        width: 100%
+    }
+
+    .equipe img {
+        width: 100%;
+    }
+    
+    #conseilles img {
+        
+        width:100%;
+        margin: auto;
+        height: auto;
+    }
+
+    /*nouvelles destinations*/
+    #nouvelles,
+    #nouv h3 {
+        display: none;
+    }
+
+
+    #destinations img:hover {
+        transform: none;
+        height: auto;
+    }
+
+
+    /*PAGE CONTACT*/
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-left: 0px;
+
+    }
+
+    #form>div:nth-child(3){
+        width: 100%;
+height: auto;
+        margin-left: 50px;
+        margin-right:auto;
+    }
+
+
+
+
+}
